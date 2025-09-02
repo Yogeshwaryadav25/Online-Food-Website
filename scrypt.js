@@ -1,0 +1,14 @@
+let header = document.querySelector('header');
+let menu = document.querySelector('#menu-icon');
+let navbar = document.querySelector('.navbar');
+
+
+
+
+window.addEventListener('scroll',() => {
+  header.classList.toggle('active', window.scrollY > 0);
+});
+
+menu.oneclick = () => {
+  navbar.classList.toggle('active');
+}
